@@ -1,0 +1,19 @@
+{
+  "name": "fetch-movies",
+  "version": "0.1.0",
+  "description": "fetch-movies",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luobotang/fetch-movies.git"
+  },
+  "author": "luobotang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luobotang/fetch-movies/issues"
+  },
+  "homepage": "https://github.com/luobotang/fetch-movies#readme"
+}
