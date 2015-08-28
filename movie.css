@@ -3,4 +3,11 @@ body {
 }
 a {
 	text-decoration: none;
+	color: #0ce;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	color: #999;
 }
