@@ -25,7 +25,11 @@ http.get(WEB_SITE_ROOT, function (res) {
 		var html = Buffer.concat(data).toString('binary')
 		var movies = MovieParser.parse(html)
 		var htmlTitle = 'Movies' + today
-		MovieRenderAndWriter.renderAndSave(movies, outputfile, htmlTitle)
+		MovieRenderAndWriter.renderAndSave(movies, {
+			output: outputfile,
+			title: htmlTitle,
+			site: WEB_SITE_ROOT.slice(0, -1)
+		})
 		cacheFileStream.end()
 	})
 })
