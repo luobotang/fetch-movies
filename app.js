@@ -25,7 +25,7 @@ http.get(WEB_SITE_ROOT, function (res) {
 })
 
 function findAndSaveMovies(buffer) {
-	var outFileStream = fs.createWriteStream('movie.html', {encoding: 'binary'})
+	var outFileStream = fs.createWriteStream('out/movie.html', {encoding: 'binary'})
 	outFileStream.write(new Buffer(
 		'<!doctype html>' +
 		'<html lang="en">' +
