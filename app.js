@@ -24,10 +24,9 @@ http.get(WEB_SITE_ROOT, function (res) {
 		// 按单字节处理，避免编码问题
 		var html = Buffer.concat(data).toString('binary')
 		var movies = MovieParser.parse(html)
-		var htmlTitle = 'Movies' + today
 		MovieRenderAndWriter.renderAndSave(movies, {
 			output: outputfile,
-			title: htmlTitle,
+			title: 'Movies - ' + today,
 			site: WEB_SITE_ROOT.slice(0, -1)
 		})
 		cacheFileStream.end()
