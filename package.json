@@ -4,7 +4,7 @@
   "description": "fetch-movies",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "start node app.js && start out/movie.html"
   },
   "repository": {
     "type": "git",
