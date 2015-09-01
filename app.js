@@ -1,3 +1,5 @@
+require('coffee-script/register')
+
 var path = require('path')
 var dateFormat = require('dateformat')
 
