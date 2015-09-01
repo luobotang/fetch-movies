@@ -26,7 +26,7 @@ http.get(WEB_SITE_ROOT, function (res) {
 		var movies = MovieParser.parse(html)
 		MovieRenderAndWriter.renderAndSave(movies, {
 			output: outputfile,
-			title: 'Movies - ' + today,
+			title: today + ' Movies',
 			site: WEB_SITE_ROOT.slice(0, -1)
 		})
 		cacheFileStream.end()

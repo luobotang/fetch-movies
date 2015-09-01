@@ -1,6 +1,6 @@
 {
   "name": "fetch-movies",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "fetch-movies",
   "main": "app.js",
   "scripts": {
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/luobotang/fetch-movies#readme",
   "dependencies": {
+    "cheerio": "^0.19.0",
     "dateformat": "^1.0.11"
   }
 }
