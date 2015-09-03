@@ -12,8 +12,7 @@ var outputfile = 'out/movie.html'
 var timeout = 5000
 
 fetchMovies({
-	cacheFile: path.resolve(cacheDirectory, dateFormat(now, 'yyyy-mm-dd_HH') + '.html'),
-	timeout: timeout
+	cacheFile: path.resolve(cacheDirectory, dateFormat(now, 'yyyy-mm-dd_HH') + '.html')
 }).then(function (movies) {
 	console.log('fetch success, got ' + movies.length + ' movies')
 	console.log('try save to ' + outputfile + ' ...')

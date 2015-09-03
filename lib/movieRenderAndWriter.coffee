@@ -14,6 +14,11 @@ html
       each movie in movies
         li
           a(href="#{movie.url}" target="_blank")= movie.name
+          if movie.detail
+            ul
+              each url in movie.detail
+                li
+                  a(href="#{url}")= url
 '''
 
 module.exports = (movies, options) ->
