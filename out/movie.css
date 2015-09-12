@@ -11,3 +11,6 @@ a:hover {
 a:visited {
 	color: #999;
 }
+li li a {
+	color: #ccc;
+}
